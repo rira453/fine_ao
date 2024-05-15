@@ -191,7 +191,7 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="section-title text-secondary">About Us<span></span></p>
+                        <p class="section-title text-secondary">à propos de nous<span></span></p>
                        
                         <p class="mb-4">
                             Par ambition de travailler avec nos fournisseurs et nos partenaires en offrant la meilleure qualité de service dans le strict respect des règles, Amendis met à votre disposition ce site web dédié à 100% aux partenaires, et nous nous engageons dans une démarche d’amélioration continue afin d’optimiser et de centraliser nos échanges dans un souci de fiabilité, de rapidité et de transparence. Fournisseurs, entrepreneurs, bureaux d’étude… vous pouvez consulter en temps réel les avis des appels d’offres lancés par Amendis Tanger et Tétouan, et de vous renseigner sur les résultats définitifs y afférents, prononcées par la commission des appels d’offres. Ainsi, nous vous invitons à consulter de manière systématique la liste des appels d'offres et d'identifier ceux qui susciteront votre intérêt.</p>
@@ -242,17 +242,19 @@
                 <p class="section-title text-dark h3 mb-4"><img src="{% static 'img/logo1.png' %}" alt="logo"></p>
                 <p>
                     <i class="fa fa-map-marker-alt me-3"></i>
-                    Bd. Idriss 1 Immeuble Tanger Office Center 9 ème étage
+                    <a href="https://www.google.com/maps/search/Bd.+Idriss+1+Tanger/@35.7708713,-5.803101,17z/data=!3m1!4b1 " target="_blank"> Bd. Idriss 1 Immeuble Tanger Office Center 9 ème étage </a>
+                
                 </p>
                 <p><i class="fa fa-phone-alt me-3"></i>05 39 32 80 28 / 27 - Fax: 05 39 34 04 56 </p>
                 
                
                 <div class="d-flex pt-2 justify-content-center"> <!-- Center the social icons -->
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://twitter.com/AmendisOfficiel" target="_blank" onclick="openInNewTab(this.href); return false;"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/AmendisOfficiel/?locale=fr_FR&_rdc=1&_rdr" target="_blank" onclick="openInNewTab(this.href); return false;"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/officielamendis/" target="_blank" onclick="openInNewTab(this.href); return false;"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/officielamendis/" target="_blank" onclick="openInNewTab(this.href); return false;"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -274,6 +276,14 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+
+    <script>
+        function openInNewTab(url) {
+          var win = window.open(url, '_blank');
+          win.focus();
+          history.replaceState(null, '', window.location.pathname); // Remove current page from history
+        }
+        </script>
 
     <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
